@@ -5,7 +5,7 @@ $ch = curl_init();
 
 // Set base url & API key
 $BASE_URL = "https://app.scrapingbee.com/api/v1/?";
-$API_KEY = "6H0GO7FZWBYSRTMGKIJKTELCHGPEXILAKWP5O40STAOSUW50209WGICH34VNQE5HCZ0FS9SYLWD91QFG";
+$API_KEY = "";
 
 // Set parameters
 $parameters = array(
