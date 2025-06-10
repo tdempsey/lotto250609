@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GA F5 1K Cover</title>
+</head>
+<body>
+    <h1>GA F5 1K Cover - {{ prev_date }}</h1>
+    <p>Winning Numbers: {{ winning_numbers|join(', ') }}</p>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th>
+            <th>Numbers</th>
+            <th>Match Count</th>
+        </tr>
+        {% for r in results %}
+        <tr>
+            <td>{{ r.id }}</td>
+            <td>{{ r.numbers|join(', ') }}</td>
+            <td>{{ r.match }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Summary</h3>
+    <ul>
+        <li>2 Wins: {{ two_wins }}</li>
+        <li>3 Wins: {{ three_wins }}</li>
+        <li>4 Wins: {{ four_wins }}</li>
+        <li>5 Wins: {{ five_wins }}</li>
+    </ul>
+</body>
+</html>
