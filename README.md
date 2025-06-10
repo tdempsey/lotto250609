@@ -24,7 +24,7 @@ A Flask-based web application for analyzing lottery draw patterns and statistics
 2. Install the required dependencies:
 
 ```bash
-pip install flask pymysql
+pip install -r requirements.txt
 ```
 
 3. Copy Bootstrap files:
